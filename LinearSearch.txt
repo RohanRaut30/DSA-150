@@ -1,0 +1,26 @@
+class LinearSearch{
+    
+    public static int search(int list[], int target){
+        
+        for (int i=0; i < list.length;i++){
+            if(list[i]==target){
+                return i;
+            }
+        }
+         return -1;
+    }
+    
+    public static void main(String arg[]){
+        
+        int[]  list={1,6,3,9,8,3,2,0,7,5,9};
+        int target = 21;
+        int result = search(list , target);
+        if(result==-1){
+        System.out.print("Num not in list");
+        }
+        else{
+            System.out.print("Value:- "+result);
+        }
+        
+    }
+}
